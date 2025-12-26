@@ -1,0 +1,33 @@
+.homepage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+.middlelogo{
+    width: 12%;
+}
+.homepage p{
+    font-size: 20px;
+    font-weight: 450;
+}
+
+@media (max-width:912px) {
+.middlelogo{
+    width: 22%;
+}
+}
+
+@media (max-width:600px) {
+    .homepage{
+        padding-right: 10%;
+    }
+    .homepage p{
+    font-size: 15px;
+    font-weight: 450;
+}
+.middlelogo{
+    width: 40%;
+}
+}

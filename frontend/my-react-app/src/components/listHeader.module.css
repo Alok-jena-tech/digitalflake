@@ -1,0 +1,98 @@
+/* ListHeader.module.css */
+
+/* --- Main Container --- */
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5vh 2vw;
+  border-bottom: 1px solid #eee; 
+    /* margin-left: 3vw; */
+}
+
+.titleSection {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  gap: 1vw;
+}
+
+.iconBlock {
+  font-size: 1.6vw;
+}
+
+.iconRow {
+  background-color: #5d3f6d;
+    height: 6px;
+  width: 6px;
+  border-radius: 1px;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* --- Search and Button Section --- */
+.searchSection {
+  display: flex;
+  align-items: center;
+}
+
+/* --- Search Input Styling --- */
+.searchBox {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  /* padding: 2vh;s */
+  border-radius: 15px;
+  gap: 10px;
+
+}
+
+.searchIcon {
+  position: absolute;
+  left: 10px;
+  color: #aaa;
+  font-size: 1rem;
+}
+
+.searchInput {
+  padding: 1.5vh 3vw; /* Extra padding for the icon */
+  width: 25vw; /* Adjust width as needed */
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.searchInput:focus {
+  border-color: #5d3f6d;
+  outline: none;
+}
+
+/* --- Add New Button Styling --- */
+.addNewButton {
+  background-color: #5d3f6d; /* Purple color from the image */
+  color: white;
+  border: none;
+  padding: 1vh 1.3vw;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  /* Matching the height of the search input */
+  height: 42px; 
+}
+
+.addNewButton:hover {
+  background-color: #4a3356;
+}
+
+.addNewButton:active {
+  transform: translateY(1px);
+}

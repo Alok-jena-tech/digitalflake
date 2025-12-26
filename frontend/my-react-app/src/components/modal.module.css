@@ -1,0 +1,97 @@
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 30px;
+}
+
+.modalContent {
+  background-color: white;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 450px; 
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.warningIcon {
+  color: #ff4d4f; /* Red/Alert color */
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  color: #333;
+}
+
+/* --- 4. Message Section --- */
+.message {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+/* --- 5. Action Buttons --- */
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px; /* Space between buttons */
+  width: 100%;
+  max-width: 350px;
+}
+
+.button {
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 30px; /* Pill shape */
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex: 1; /* Makes buttons take equal width */
+}
+
+/* Secondary/Cancel Button (Delete) */
+.cancelButton {
+  background-color: transparent;
+  color: #666;
+  border: 1px solid #ccc;
+}
+
+.cancelButton:hover {
+  background-color: #f0f0f0;
+}
+
+/* Primary/Confirm Button */
+.confirmButton {
+  background-color: #6a1b9a; /* Deep Purple Color */
+  color: white;
+  border: none;
+}
+
+.confirmButton:hover {
+  background-color: #581682;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}

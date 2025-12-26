@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-color: rgba(92, 33, 139, 0.2);
+  padding: 1.5rem; /* p-4 */
+}
+
+.card {
+  background-color: #ffffff;
+  width: 30vw;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 2rem;
+  height: 70vh;
+  margin-left: 10%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  margin-top: 50px;
+  width: 238px; /* w-14 */
+  height: 124px; /* h-14 */
+  margin-bottom: 0.5rem; /* mb-2 */
+}
+
+.title {
+  font-size: 1.25rem; /* text-xl */
+  font-weight: 400; /* font-semibold */
+  color: #76787b; /* text-gray-800 */
+}
+
+.formGroup {
+  margin-top: 2.5rem; /* mt-6 */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* space-y-4 */
+}
+
+.label {
+  font-size: 1rem; /* text-sm */
+  color: #4b5563; /* text-gray-600 */
+}
+
+.input {
+  width: 100%;
+  margin-top: 0.25rem; /* mt-1 */
+  padding: 0.8rem 0.75rem; /* px-3 py-2 */
+  border: 1px solid #d1d5db; /* border */
+  border-radius: 5px;
+  border: 10px solid 4b5563;
+  outline: none;
+}
+
+.input:focus {
+  box-shadow: 0 0 0 2px #7c3aed; /* focus:ring-2 focus:ring-purple-500 */
+}
+
+.forgotBtn {
+  text-align: right;
+  color: #7c3aed;
+  font-size: 0.875rem; /* text-sm */
+  cursor: pointer;
+}
+
+.forgotBtn:hover {
+  text-decoration: underline;
+}
+
+.submitBtn {
+  background-color: rgba(92, 33, 139, 1);
+  color: white;
+  width: 100%;
+  padding: 0.8rem 0.75rem; /* px-3 py-2 */
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitBtn:hover {
+  background-color: #4c1d95; /* hover:bg-purple-800 approximation */
+}
+
+.icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #adb5bd;
+}
+.passwordWrapper {
+  position: relative;
+}
+.icon {
+  position: absolute;
+  right: 12px;
+  top: 45px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: #6b7280; 
+  /* z-index: 99; */
+}
+.noUnderline {
+  text-decoration: none;
+}
+
+
+@media (max-width: 1280px) {
+  .container {
+    justify-content: left; /* center card horizontally */
+    padding: 1.2rem;
+  }
+
+  .card {
+    width: 45vw;      /* slightly wider on smaller screens */
+    max-width: 500px; /* prevent overflow */
+    margin-left: 10%;   /* remove left margin */
+    height: auto;     /* let height adjust */
+    padding: 1.8rem;
+  }
+
+  .logo {
+    width: 200px;     /* smaller logo */
+    height: auto;
+    margin-top: 40px;
+  }
+
+  .title {
+    font-size: 1.15rem;
+    text-align: center;
+  }
+
+  .formGroup {
+    margin-top: 2rem;
+    gap: 0.9rem;
+  }
+
+  .input {
+    padding: 0.75rem 0.6rem;
+    font-size: 0.95rem;
+  }
+
+  .submitBtn {
+    padding: 0.75rem 0.6rem;
+  }
+
+  .forgotBtn {
+    font-size: 0.85rem;
+  }
+
+  .icon {
+    right: 10px;
+    top: 42%;
+    font-size: 1.1rem;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .container {
+    justify-content: left; 
+    padding: 1rem;
+  }
+
+  .card {
+    width: 50vw;       /* increase width for smaller screens */
+    margin-left: 10%;    /* remove left margin */
+    height: auto;      /* allow card height to adjust */
+    padding: 1.5rem;
+  }
+
+  .logo {
+    width: 180px;
+    height: auto;
+    margin-top: 30px;
+  }
+
+  .title {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .formGroup {
+    margin-top: 2rem;
+    gap: 0.8rem;
+  }
+
+  .input {
+    padding: 0.7rem 0.6rem;
+    font-size: 0.95rem;
+  }
+
+  .submitBtn {
+    padding: 0.7rem 0.6rem;
+  }
+
+  .forgotBtn {
+    font-size: 0.85rem;
+  }
+
+  .icon {
+    right: 10px;
+    top: 65%;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .card {
+    width: 90vw;
+    margin-left: 0;
+    padding: 1.5rem;
+    height: auto;
+  }
+
+  .logo {
+    width: 150px;
+    margin-top: 30px;
+  }
+
+  .title {
+    font-size: 1.1rem;
+  }
+
+  .input {
+    padding: 0.7rem 0.5rem;
+  }
+
+  .icon {
+    top: 72%;
+    right: 10px;
+  }
+}

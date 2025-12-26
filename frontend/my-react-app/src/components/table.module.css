@@ -1,0 +1,108 @@
+.tableContainer {
+  margin: 20px 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 98%;
+}
+
+.tableHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  background-color: rgba(255, 248, 183, 1);
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.tableHeader h2 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.addButton {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.addButton:hover {
+  background-color: #0056b3;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+.noDataCell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 16px;
+  color: #666;
+}
+
+.table th {
+  padding: 12px 16px;
+  text-align: left;
+  background-color: #f1f3f4;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.table td {
+  padding: 12px 16px;
+  /* border-bottom: 1px solid #e0e0e0; */
+  color: #555;
+}
+
+.table tr:hover {
+  background-color: #f8f9fa;
+}
+
+.actionsCell {
+  display: flex;
+  gap: 8px;
+}
+
+.editButton,
+/* .deleteButton {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.3s;
+} */
+
+.editButton {
+  /* background-color: #ffc107; */
+  /* color: #212529; */
+  border: none;
+  font-size: 25px;
+}
+
+.editButton:hover {
+  /* background-color: #e0a800; */
+}
+
+.deleteButton {
+  /* background-color: #dc3545; */
+  /* color: white; */
+  border: none;
+  font-size: 25px;
+}
+
+.deleteButton:hover {
+  /* background-color: #c82333; */
+}
