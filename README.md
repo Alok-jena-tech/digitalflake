@@ -28,5 +28,31 @@ Digitalflake is an admin dashboard application where users can manage categories
 - **Database:** MongoDB
 - **Authentication:** JWT 
 - **Others:** bcrypt, dotenv,Multer,Nodemailer
+----
+
+## Installation
+
+
+```bash
+cd backend
+
+npm install
+MONGO_URL=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+JWT_EXPIRES_IN
+EMAIL_PASSWORD=your_email_smtp_password
+EMAIL=your_email@example.com
+PORT=5000
+npm run dev
+
+
+for Frontend
+
+cd frontend
+cd my-react-app
+VITE_BASE_URL=backend url
+npm install
+npm run dev
+
 
 
